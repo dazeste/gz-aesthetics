@@ -1,14 +1,12 @@
- :root{
-  --clr-primary:gold;
-  --clr-white:white;
-  --clr-black:#333;
-  --clr-bg-dark:#e5ddd2;
-  --clr-bg-light:#fbf6f0;
-  --clr-primary-light:#745947;
-  --clr_nav:#ab9a82;
-  --clr-selected:#897252;
+$clr-primary:gold;
+$clr-white:white;
+$clr-black:#333;
+$clr-bg-dark:#e5ddd2;
+$clr-bg-light:#fbf6f0;
+$clr-primary-light:#745947;
+$clr_nav:#ab9a82;
+$clr-selected:#897252;
 
-}
 
 *{ box-sizing: border-box;}
 
@@ -25,51 +23,55 @@ body{
 header{
   height: 10vh;
 
-}
-header .container{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  .container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  .menu{
+    background-color: var(--clr-bg-light);
+    padding: 20px 30px;  
+  }
 
 }
-header  .menu{
-  background-color: var(--clr-bg-light);
-  padding: 20px 30px;
 
-}
+
 .container{
   padding-left: 10vh;
-
-
 } 
+
 main{
 height: 90vh;
 
-}
-main > ol.pages{
+ol.pages{
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
   counter-set: header 0 nextpage 1;
-
-
 }
-main > ol.pages > li{
+
+> li{
   height: 100%;
   display: flex;
   counter-increment: header;
 }
-
-main > ol.pages > .left-col > .right-col{
+  
+.left-col, .right-col{
   position: relative;
   flex: 1;
-
-
 }
-main > ol.pages > .right-col > .image{
+
+.image{
   height: 100%;
   background-size: cover;
 }
+
+
+
+}
+
+
