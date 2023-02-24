@@ -1,0 +1,20 @@
+/* font-family: 'Playfair Display', serif; */
+:root{
+  --clr-primary:gold;
+  --clr-white:white;
+  --clr-black:#333;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header{
+
+}
+.conatiner{
+
+}
