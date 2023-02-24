@@ -48,10 +48,30 @@ main ol.pages > li {
 main ol.pages > li .left-col, main ol.pages > li .right-col {
   position: relative;
   flex: 1;
+  min-width: 0;
+}
+main ol.pages > li .left-col {
+  z-index: 2;
+}
+main ol.pages > li .right-col {
+  z-index: 1;
 }
 main ol.pages > li .image {
   height: 100%;
   background-size: cover;
+}
+main ol.pages > li h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #745947;
+  white-space: nowrap;
+}
+main ol.pages > li h2::before {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 60px;
+  content: "0" counter(header) ".";
 }
 
 /*# sourceMappingURL=style.css.map */

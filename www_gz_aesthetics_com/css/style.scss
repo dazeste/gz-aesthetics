@@ -64,11 +64,32 @@ main{
       .left-col, .right-col {
         position:relative;
         flex: 1;
+        min-width: 0;
+      }
+      .left-col{
+        z-index: 2;
+      }
+      .right-col {
+        z-index: 1;
       }
       .image {
         height: 100%;
         background-size: cover;
 
+      }
+      h2{
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color:$clr-primary-light;
+        white-space: nowrap;
+
+        &::before{
+          display: block;
+          margin-bottom:30px ;
+          font-size: 60px;
+          content:"0" counter(header) "."//set counter and its updates automaticly
+        }
       }
     }
   }
