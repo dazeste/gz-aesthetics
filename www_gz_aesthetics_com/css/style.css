@@ -1,75 +1,57 @@
- :root{
-  --clr-primary:gold;
-  --clr-white:white;
-  --clr-black:#333;
-  --clr-bg-dark:#e5ddd2;
-  --clr-bg-light:#fbf6f0;
-  --clr-primary-light:#745947;
-  --clr_nav:#ab9a82;
-  --clr-selected:#897252;
-
+* {
+  box-sizing: border-box;
 }
 
-*{ box-sizing: border-box;}
-
-body{ 
+body {
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100%;
-  background-color: var(--clr-bg-dark);
-  font-family: 'Playfair Display', serif;
+  background-color: #e5ddd2;
+  font-family: "Playfair Display", serif;
 }
 
-
-header{
+header {
   height: 10vh;
-
 }
-header .container{
+header .container {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-
 }
-header  .menu{
-  background-color: var(--clr-bg-light);
+header .menu {
+  background-color: #fbf6f0;
   padding: 20px 30px;
-
 }
-.container{
-  padding-left: 10vh;
 
-
-} 
-main{
-height: 90vh;
-
+.container {
+  padding-left: 10vw;
 }
-main > ol.pages{
+
+main {
+  min-height: 90vh;
+}
+main ol.pages {
   height: 100%;
   width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
   overflow: hidden;
   counter-set: header 0 nextpage 1;
-
-
 }
-main > ol.pages > li{
+main ol.pages > li {
   height: 100%;
   display: flex;
   counter-increment: header;
 }
-
-main > ol.pages > .left-col > .right-col{
+main ol.pages > li .left-col, main ol.pages > li .right-col {
   position: relative;
   flex: 1;
-
-
 }
-main > ol.pages > .right-col > .image{
+main ol.pages > li .image {
   height: 100%;
   background-size: cover;
 }
+
+/*# sourceMappingURL=style.css.map */
