@@ -30,7 +30,7 @@ header .menu {
 }
 
 main {
-  min-height: 90vh;
+  height: 90vh;
 }
 main ol.pages {
   height: 100%;
@@ -48,67 +48,17 @@ main ol.pages > li {
 main ol.pages > li .left-col, main ol.pages > li .right-col {
   position: relative;
   flex: 1;
-  min-width: 0;
-}
-main ol.pages > li .left-col {
-  z-index: 2;
-}
-main ol.pages > li .right-col {
-  z-index: 1;
 }
 main ol.pages > li .image {
-  height: 90vh;
+  height: 100%;
   background-size: cover;
 }
 main ol.pages > li h2 {
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
   font-weight: 600;
   color: #745947;
   white-space: nowrap;
-}
-main ol.pages > li h2::before {
-  display: block;
-  margin-bottom: 30px;
-  font-size: 60px;
-  content: "0" counter(header) ".";
-}
-main ol.pages > li p {
-  color: #745947;
-  line-height: 2;
-  padding-right: 70px;
-  font-size: 20px;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-footer ol.next-pages {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  width: 100%;
-}
-footer ol.next-pages > li {
-  counter-increment: nextpage;
-}
-footer ol.next-pages > li .next-page {
-  width: 60%;
-  height: 150px;
-  padding-left: 20px;
-  background-color: #fbf6f0;
-  display: flex;
-  align-items: stretch;
-  align-content: center;
-  justify-content: space-between;
-}
-footer ol.next-pages > li .next-page h3 {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

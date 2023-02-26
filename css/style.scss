@@ -40,15 +40,14 @@ header {
 
 }
 
-
-.container {
+.container{
   padding-left: 10vw;
-} 
+}
 
 main{
-  min-height: 90vh;
+  height: 90vh;
 
-  ol.pages {
+  ol.pages{
     height: 100%;
     width: 100%;
     padding: 0;
@@ -57,89 +56,134 @@ main{
     counter-set: header 0 nextpage 1;
 
     > li {
-      height: 100%;
-      display: flex;
-      counter-increment: header;
+        height: 100%;
+        display: flex;
+        counter-increment: header;
 
-      .left-col, .right-col {
-        position:relative;
-        flex: 1;
-        min-width: 0;
-      }
-      .left-col{
-        z-index: 2;
-      }
-      .right-col {
-        z-index: 1;
-      }
-      .image {
-        height: 90vh;
-        background-size: cover;
-
-      }
-      h2{
-        font-size: 40px;
-        text-transform: uppercase;
-        font-weight: 600;
-        color:$clr-primary-light;
-        white-space: nowrap;
-
-        &::before{
-          display: block;
-          margin-bottom:30px ;
-          font-size: 60px;
-          content:"0" counter(header) "."//set counter and its updates automaticly
+        .left-col, .right-col {
+          position:relative;
+          flex: 1;
+          // min-width: 0;
         }
 
-      }
+        .image {
+          height: 100%;
+          background-size: cover;
+        }
 
-      p {
-        color: $clr-primary-light;
-        line-height: 2;
-        padding-right: 70px;
-        font-size: 20px;
-      }     
-    }
+        h2{
+          font-size: 50px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color:$clr-primary-light;
+          white-space: nowrap;
+        }
+
+
+
+      }
   }
 }
 
-footer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+// .container {
+//   padding-left: 10vw;
+// } 
 
-  ol.next-pages {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100%;
+// main{
+//   min-height: 100%;
 
-    > li{
-      counter-increment: nextpage ;
-      .next-page{
-        width: 60%;
-        height: 150px;
-        padding-left: 20px;
-        background-color: $clr-bg-light;
-        display: flex;
-        align-items: stretch;
-        align-content: center;
-        justify-content: space-between;
+//   ol.pages {
+//     height: 100%;
+//     width: 100%;
+//     padding: 0;
+//     margin: 0;
+//     overflow: hidden;
+//     counter-set: header 0 nextpage 1;
 
-        h3{
-          margin: 0;
-          display: flex;
-          flex-direction: column;
+//     > li {
+//       height: 100%;
+//       display: flex;
+//       counter-increment: header;
 
-        }
+//       .left-col, .right-col {
+//         position:relative;
+//         flex: 1;
+//         min-width: 0;
+//       }
+//       .left-col{
+//         z-index: 2;
+//       }
+//       .right-col {
+//         z-index: 1;
+//       }
+//       .image {
+//         height: 100%;
+//         background-size: cover;
 
-      }
+//       }
+//       h2{
+//         font-size: 40px;
+//         text-transform: uppercase;
+//         font-weight: 600;
+//         color:$clr-primary-light;
+//         white-space: nowrap;
+
+//         &::before{
+//           display: block;
+//           margin-bottom:30px ;
+//           font-size: 60px;
+//           content:"0" counter(header) "."//set counter and its updates automaticly
+//         }
+
+//       }
+
+//       p {
+//         color: $clr-primary-light;
+//         line-height: 2;
+//         padding-right: 70px;
+//         font-size: 20px;
+//       }     
+//     }
+//   }
+// }
+
+// footer{
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+
+//   ol.next-pages {
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//     width: 100%;
+
+//     > li{
+//       counter-increment: nextpage ;
+//       .next-page{
+//         width: 60%;
+//         height: 150px;
+//         padding-left: 20px;
+//         background-color: $clr-bg-light;
+//         display: flex;
+//         align-items: stretch;
+//         align-content: center;
+//         justify-content: space-between;
+
+//         h3{
+//           margin: 0;
+//           display: flex;
+//           flex-direction: column;
+
+//         }
+
+//       }
      
 
 
-    }
+//     }
 
-  }
+//   }
 
-}
+// }
