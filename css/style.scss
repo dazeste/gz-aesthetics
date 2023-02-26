@@ -47,6 +47,22 @@ header {
 main{
   height: 90vh;
 
+  nav{
+    position: absolute;
+    top:500px;
+    left:40px;   
+    z-index: 20;
+
+    .page{
+      position: absolute;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background-color:$clr_nav;
+
+    }//page
+  }//nav
+
 
   ol.pages{
     height: 100%;

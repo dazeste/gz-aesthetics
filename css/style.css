@@ -32,6 +32,19 @@ header .menu {
 main {
   height: 90vh;
 }
+main nav {
+  position: absolute;
+  top: 500px;
+  left: 40px;
+  z-index: 20;
+}
+main nav .page {
+  position: absolute;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #ab9a82;
+}
 main ol.pages {
   height: 100%;
   width: 100%;
