@@ -34,7 +34,7 @@ main {
 }
 main nav {
   position: absolute;
-  top: 500px;
+  top: 400px;
   left: 40px;
   z-index: 20;
 }
@@ -44,6 +44,28 @@ main nav .page {
   width: 6px;
   height: 6px;
   background-color: #ab9a82;
+  cursor: pointer;
+}
+main nav .page:hover, main nav .page.selected {
+  background-color: #897252;
+  height: 8px;
+  width: 8px;
+  left: -1px;
+}
+main nav .page:nth-child(2) {
+  top: 30px;
+}
+main nav .page:nth-child(3) {
+  top: 60px;
+}
+main nav .page:nth-child(4) {
+  top: 90px;
+}
+main nav .page:nth-child(5) {
+  top: 120px;
+}
+main nav .page:nth-child(6) {
+  top: 150px;
 }
 main ol.pages {
   height: 100%;
