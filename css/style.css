@@ -79,6 +79,7 @@ main ol.pages > li {
   height: 100%;
   display: flex;
   counter-increment: header;
+  transition: all 2s ease;
 }
 main ol.pages > li .left-col, main ol.pages > li .right-col {
   position: relative;
